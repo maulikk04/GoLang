@@ -19,6 +19,7 @@ func main() {
 		mut.Unlock()
 		wg.Done()
 	}(wg, mut)
+
 	go func(wg *sync.WaitGroup, m *sync.Mutex) {
 		fmt.Println("Two R")
 		mut.Lock()

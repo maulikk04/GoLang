@@ -6,6 +6,7 @@ import (
 )
 
 // Name will be displayed as name in json
+
 type course struct {
 	Name     string `json:"name"` //Name will be displayed as name in json
 	Price    int
